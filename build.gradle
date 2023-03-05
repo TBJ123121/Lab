@@ -21,6 +21,11 @@ repositories {
 dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '16.0.1'
     compile group: 'com.github.davidmoten', name: 'grumpy-core', version: '0.2.2'
+<<<<<<< HEAD
+=======
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+>>>>>>> e1c57c6 (first commit)
     testCompile 'junit:junit:4.12'
 
 }
