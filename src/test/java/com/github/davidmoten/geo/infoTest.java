@@ -38,10 +38,20 @@ public class infoTest {
     }
 
     @Test
+    public void time() {
+        long s = info.time();
+        assertEquals(1,s);
+    }
+    @Test
     public void value() {
+        Integer s = info.value();
+        assertEquals(1,s,0);
+
     }
 
     @Test
     public void testToString() {
+        String s = info.toString();
+        assertEquals("Info [lat=1.0, lon=1.0, time=1, value=1, id=Optional.of(1)]",s);
     }
 }
