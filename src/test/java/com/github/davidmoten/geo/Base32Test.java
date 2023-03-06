@@ -16,18 +16,11 @@ public class Base32Test {
     public void tearDown() throws Exception {
     }
 
-<<<<<<< HEAD
-=======
-    //每個@Test都為測試個案
->>>>>>> e1c57c6 (first commit)
+
     @Test
     public void encodeBase32() throws Exception {
         String encode = Base32.encodeBase32(75324, 4);
         assertEquals("29jw", encode);
-<<<<<<< HEAD
-    }
-
-=======
         encode = Base32.encodeBase32(-75324,4);
         assertEquals("-29jw",encode);
         encode = Base32.encodeBase32(75324,9);
@@ -47,6 +40,4 @@ public class Base32Test {
         assertEquals(-75324,decode);
     }
 
-
->>>>>>> e1c57c6 (first commit)
 }

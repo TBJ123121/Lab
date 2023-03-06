@@ -1,5 +1,6 @@
-package com.github.davidmoten.geo.mem;
+package com.github.davidmoten.geo;
 
+import com.github.davidmoten.geo.mem.Info;
 import com.google.common.base.Optional;
 import org.junit.After;
 import org.junit.Before;
@@ -7,8 +8,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class InfoTest {
-    Info<Integer,Integer> info = new Info(1,1,1,1,Optional.of(1));
+public class infoTest {
+    Info<Integer,Integer> info = new Info(1,1,1,1, Optional.of(1));
 
     @Before
     public void setUp() throws Exception {
@@ -22,7 +23,6 @@ public class InfoTest {
     public void id() {
         Optional<Integer> idd = info.id();
         assertEquals(Optional.of(1),idd);
-
     }
 
     @Test
@@ -35,10 +35,6 @@ public class InfoTest {
     public void lon() {
         double s = info.lon();
         assertEquals(1,s,0);
-    }
-
-    @Test
-    public void time() {
     }
 
     @Test
