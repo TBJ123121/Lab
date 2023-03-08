@@ -62,14 +62,31 @@ public class GeoHashTest {
         assertEquals(ans,str_neighbor);
     }
 
-    @Test
-    public void widthDegrees() {
-
-
-    }
 
     @Test
     public void encodeHashToLong() {
         assertEquals(0x65c0000000000002L,GeoHash.encodeHashToLong(41.84,-71.2,2));
+    }
+
+
+    @Test
+    public void heightDegrees() {
+        GeoHash.encodeHash(-25,-49,1);
+        GeoHash.encodeHash(-25,-49,2);
+        GeoHash.encodeHash(-25,-49,3);
+        GeoHash.encodeHash(-25,-49,4);
+        GeoHash.encodeHash(-25,-49,5);
+        GeoHash.encodeHash(-25,-49,6);
+        assertEquals(45.0,GeoHash.heightDegrees(1),0.00001);
+        assertEquals(5.625,GeoHash.heightDegrees(2),0.00001);
+        assertEquals(1.40625,GeoHash.heightDegrees(3),0.00001);
+        assertEquals(0.17578125,GeoHash.heightDegrees(4),0.00001);
+        assertEquals(0.0439453125,GeoHash.heightDegrees(5),0.00001);
+        assertEquals(0.0054931640625,GeoHash.heightDegrees(6),0.00001);
+
+    }
+
+    @Test
+    public void widthDegrees() {
     }
 }
