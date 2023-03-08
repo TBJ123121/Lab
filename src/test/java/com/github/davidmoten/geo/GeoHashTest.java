@@ -88,5 +88,17 @@ public class GeoHashTest {
 
     @Test
     public void widthDegrees() {
+        GeoHash.encodeHash(-25,-49,1);
+        GeoHash.encodeHash(-25,-49,2);
+        GeoHash.encodeHash(-25,-49,3);
+        GeoHash.encodeHash(-25,-49,4);
+        GeoHash.encodeHash(-25,-49,5);
+        GeoHash.encodeHash(-25,-49,6);
+        assertEquals(45.0,GeoHash.widthDegrees(1),0.00001);
+        assertEquals(11.25,GeoHash.widthDegrees(2),0.00001);
+        assertEquals(1.40625,GeoHash.widthDegrees(3),0.00001);
+        assertEquals(0.3515625,GeoHash.widthDegrees(4),0.00001);
+        assertEquals(0.0439453125,GeoHash.widthDegrees(5),0.00001);
+        assertEquals(0.010986328125,GeoHash.widthDegrees(6),0.00001);
     }
 }
