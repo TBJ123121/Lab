@@ -61,4 +61,15 @@ public class GeoHashTest {
         List<String> ans = Arrays.asList("29jq", "29jy", "29jx", "29jt", "29jr", "29jm", "29jz", "29jv");
         assertEquals(ans,str_neighbor);
     }
+
+    @Test
+    public void widthDegrees() {
+
+
+    }
+
+    @Test
+    public void encodeHashToLong() {
+        assertEquals(0x65c0000000000002L,GeoHash.encodeHashToLong(41.84,-71.2,2));
+    }
 }
