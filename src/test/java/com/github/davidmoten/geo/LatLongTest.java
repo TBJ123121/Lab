@@ -25,8 +25,8 @@ public class LatLongTest {
 
     @Test
     public void add() {
-        double lat = 1.0;
-        double lon = 2.0;
+        double lat = 0;
+        double lon = 0;
         LatLong latLong = new LatLong(lat,lon);
         LatLong newlatlong = latLong.add(1,1);
         assertEquals(lat+1,newlatlong.getLat(),0);
