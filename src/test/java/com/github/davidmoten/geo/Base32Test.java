@@ -38,6 +38,27 @@ public class Base32Test {
         assertEquals(75324,decode);
         decode = Base32.decodeBase32("-29jw");
         assertEquals(-75324,decode);
+        decode = Base32.decodeBase32("");
+        assertEquals(0,decode);
     }
 
+    @Test
+    public void testEncodeBase32() {
+        String encode = Base32.encodeBase32(75324);
+        assertEquals("0000000029jw", encode);
+        encode = Base32.encodeBase32(-75324);
+        assertEquals("-0000000029jw",encode);
+    }
+
+    @Test
+    public void getCharIndex() {
+        try{
+            Base32.getCharIndex('a');
+        }catch (IllegalArgumentException e){
+            String s = "not a base32 character: a";
+            assertEquals(s,e.getMessage());
+        }
+        int i = Base32.getCharIndex('0');
+        assertEquals(0,i);
+    }
 }
