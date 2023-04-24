@@ -274,5 +274,10 @@ public class GeoHashTest {
             assertEquals("s",encodeHash);
         }
     }
+
+    @Test
+    public void fromLongToString() {
+
+    }
 }
 

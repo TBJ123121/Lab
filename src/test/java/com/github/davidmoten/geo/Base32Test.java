@@ -61,4 +61,12 @@ public class Base32Test {
         int i = Base32.getCharIndex('0');
         assertEquals(0,i);
     }
+
+    @Test
+    public void padLeftWithZerosToLength() {
+        String s = Base32.padLeftWithZerosToLength("29jw",4);
+        assertEquals(s,"29jw");
+        s = Base32.padLeftWithZerosToLength("29jw",5);
+        assertEquals(s,"029jw");
+    }
 }
