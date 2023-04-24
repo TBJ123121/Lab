@@ -45,7 +45,7 @@ public class infoTest {
     @Test
     public void value() {
         Integer s = info.value();
-        assertEquals(1,s,0);
+        assertEquals(Integer.valueOf(1), s);
 
     }
 
