@@ -275,9 +275,5 @@ public class GeoHashTest {
         }
     }
 
-    @Test
-    public void fromLongToString() {
-
-    }
 }
 
