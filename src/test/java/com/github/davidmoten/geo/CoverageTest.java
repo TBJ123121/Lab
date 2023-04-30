@@ -110,4 +110,15 @@ public class CoverageTest {
         assertEquals("Coverage [hashes=" + "[]" + ", ratio=" + 1.0 + "]",ans);
 
     }
+    @Test
+    public void testCoverageAllWorldLeaflet() {
+        double topLeftLat = 90;
+        double topLeftLon = -703;
+        double bottomRightLat = -90;
+        double bottomRightLon = 624;
+        Coverage coverage = GeoHash.coverBoundingBox(topLeftLat, topLeftLon, bottomRightLat, bottomRightLon, 1);
+        assertEquals(Sets.newHashSet( "0", "2", "8", "b"),
+                coverage.getHashes());
+    }
+
 }
