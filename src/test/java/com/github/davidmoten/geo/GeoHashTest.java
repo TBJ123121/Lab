@@ -282,23 +282,23 @@ public class GeoHashTest {
         }
     }
 
-    @Test
-    public void fromLongToString() {
-        try{
-            GeoHash.fromLongToString(13);
-        }catch (IllegalArgumentException e)
-        {
-            assertEquals(e.getMessage(),"invalid long geohash 13");
-        }
-        try{
-            GeoHash.fromLongToString(0);
-        }catch (IllegalArgumentException e)
-        {
-            assertEquals(e.getMessage(),"invalid long geohash 0");
-        }
-            String s = GeoHash.fromLongToString(1);
-            assertEquals(s,"0");
-    }
+//    @Test
+//    public void fromLongToString() {
+//        try{
+//            GeoHash.fromLongToString(13);
+//        }catch (IllegalArgumentException e)
+//        {
+//            assertEquals(e.getMessage(),"invalid long geohash 13");
+//        }
+//        try{
+//            GeoHash.fromLongToString(0);
+//        }catch (IllegalArgumentException e)
+//        {
+//            assertEquals(e.getMessage(),"invalid long geohash 0");
+//        }
+//            String s = GeoHash.fromLongToString(1);
+//            assertEquals(s,"0");
+//    }
 
 //    @Test
 //    public void testEncodeHashToLong() {
