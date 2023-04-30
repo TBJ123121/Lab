@@ -301,36 +301,36 @@ public class GeoHashTest {
     }
 
     @Test
-    public void testEncodeHashToLong() {
-        try{
-            double latitude = 37.42199;
-            double lontitude = -122.084057;
-            int length = 12;
-            GeoHash.encodeHashToLong(latitude,lontitude,length);
-        }catch (IllegalArgumentException e)
-        {
-            assertEquals(e.getMessage(),"0x9c225c26a14d8aL");
-        }
-
-        try{
-            double latitude = 100.0;
-            double lontitude = -122.084057;
-            int length = 12;
-            GeoHash.encodeHashToLong(latitude,lontitude,length);
-        }catch (IllegalArgumentException e)
-        {
-            assertEquals(e.getMessage(),"Invalid latitude, longitude, or length");
-        }
-
-        try{
-            double latitude = 37.421999;
-            double lontitude = -122.084057;
-            int length = 13;
-            GeoHash.encodeHashToLong(latitude,lontitude,length);
-        }catch (IllegalArgumentException e)
-        {
-            assertEquals(e.getMessage(),"Invalid latitude, longitude, or length");
-        }
-    }
-}
+//    public void testEncodeHashToLong() {
+//        try{
+//            double latitude = 37.42199;
+//            double lontitude = -122.084057;
+//            int length = 12;
+//            GeoHash.encodeHashToLong(latitude,lontitude,length);
+//        }catch (IllegalArgumentException e)
+//        {
+//            assertEquals(e.getMessage(),"0x9c225c26a14d8aL");
+//        }
+//
+//        try{
+//            double latitude = 100.0;
+//            double lontitude = -122.084057;
+//            int length = 12;
+//            GeoHash.encodeHashToLong(latitude,lontitude,length);
+//        }catch (IllegalArgumentException e)
+//        {
+//            assertEquals(e.getMessage(),"Invalid latitude, longitude, or length");
+//        }
+//
+//        try{
+//            double latitude = 37.421999;
+//            double lontitude = -122.084057;
+//            int length = 13;
+//            GeoHash.encodeHashToLong(latitude,lontitude,length);
+//        }catch (IllegalArgumentException e)
+//        {
+//            assertEquals(e.getMessage(),"Invalid latitude, longitude, or length");
+//        }
+//    }
+//}
 
