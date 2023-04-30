@@ -53,9 +53,9 @@ public class Base32Test {
     @Test
     public void getCharIndex() {
         try{
-            Base32.getCharIndex('a');
+            Base32.getCharIndex('e');
         }catch (IllegalArgumentException e){
-            String s = "not a base32 character: a";
+            String s = "not a base32 character: e";
             assertEquals(s,e.getMessage());
         }
         int i = Base32.getCharIndex('0');
