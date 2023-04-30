@@ -300,7 +300,7 @@ public class GeoHashTest {
             assertEquals(s,"0");
     }
 
-    @Test
+//    @Test
 //    public void testEncodeHashToLong() {
 //        try{
 //            double latitude = 37.42199;
@@ -332,5 +332,5 @@ public class GeoHashTest {
 //            assertEquals(e.getMessage(),"Invalid latitude, longitude, or length");
 //        }
 //    }
-//}
+}
 
