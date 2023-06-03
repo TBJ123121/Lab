@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230603 01:19:10.276" rpa="false" schemaversion="3">
+<suite id="s1" name="Lab05Test" source="D:\碩士\軟測\Lab\lab05\test\lab05test.robot">
+<test id="s1-t1" name="test_CreateUser" line="37">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:10.412" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:10.421" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:10.411" endtime="20230603 01:19:11.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:11.672" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:11.671" endtime="20230603 01:19:11.777"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:11.778" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:11.777" endtime="20230603 01:19:11.853"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:11.854" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:11.854" endtime="20230603 01:19:11.910"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:10.411" endtime="20230603 01:19:11.910"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Users</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Users">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Users</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:11.912" level="INFO">Clicking link 'link=Users'.</msg>
+<msg timestamp="20230603 01:19:12.042" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:12.042" level="FAIL">Link with locator 'link=Users' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:11.911" endtime="20230603 01:19:12.042"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:11.911" endtime="20230603 01:19:12.043"/>
+</kw>
+<kw name="Users">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Users</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.255" level="INFO">Clicking link 'link=Users'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.254" endtime="20230603 01:19:12.393"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:12.254" endtime="20230603 01:19:12.393"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:11.911" endtime="20230603 01:19:12.393"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-we21er</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-we21er</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.394" level="INFO">Clicking button 'class=css-we21er'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.394" endtime="20230603 01:19:12.514"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:12.393" endtime="20230603 01:19:12.514"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=name.first</arg>
+<arg>vrbev</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.515" level="INFO">Typing text 'vrbev' into text field 'name=name.first'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.514" endtime="20230603 01:19:12.601"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=name.last</arg>
+<arg>vrf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.602" level="INFO">Typing text 'vrf' into text field 'name=name.last'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.602" endtime="20230603 01:19:12.688"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>ctbff@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.689" level="INFO">Typing text 'ctbff@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.689" endtime="20230603 01:19:12.796"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@12345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.797" level="INFO">Typing text '@12345678' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.796" endtime="20230603 01:19:12.873"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Input Text</arg>
+<arg>name=password_confirm</arg>
+<arg>@12345678</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password_confirm</arg>
+<arg>@12345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.873" level="INFO">Typing text '@12345678' into text field 'name=password_confirm'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.873" endtime="20230603 01:19:12.952"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:12.873" endtime="20230603 01:19:12.952"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-h629qq</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:12.953" level="INFO">Clicking button 'class=css-h629qq'.</msg>
+<status status="PASS" starttime="20230603 01:19:12.953" endtime="20230603 01:19:13.009"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Input Text</arg>
+<arg>name=phone</arg>
+<arg>0966666666</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=phone</arg>
+<arg>0966666666</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:13.011" level="INFO">Typing text '0966666666' into text field 'name=phone'.</msg>
+<msg timestamp="20230603 01:19:13.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:13.110" level="FAIL">Element with locator 'name=phone' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:13.010" endtime="20230603 01:19:13.111"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=phone</arg>
+<arg>0966666666</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:13.315" level="INFO">Typing text '0966666666' into text field 'name=phone'.</msg>
+<status status="PASS" starttime="20230603 01:19:13.315" endtime="20230603 01:19:13.395"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:13.009" endtime="20230603 01:19:13.395"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-2960tt</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:13.396" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:13.396" endtime="20230603 01:19:13.469"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:13.396" endtime="20230603 01:19:13.469"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-ctpeu</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:13.469" endtime="20230603 01:19:13.492"/>
+</kw>
+<msg timestamp="20230603 01:19:13.492" level="INFO">${result} = Your changes have been saved successfully</msg>
+<status status="PASS" starttime="20230603 01:19:13.469" endtime="20230603 01:19:13.492"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${SUS_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230603 01:19:13.492" endtime="20230603 01:19:13.493"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:13.493" endtime="20230603 01:19:15.570"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:10.411" endtime="20230603 01:19:15.571"/>
+</test>
+<test id="s1-t2" name="test_CreatePost" line="56">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:15.573" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:15.582" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:15.573" endtime="20230603 01:19:16.881"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:16.882" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:16.881" endtime="20230603 01:19:16.987"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:16.988" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:16.988" endtime="20230603 01:19:17.066"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.066" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:17.066" endtime="20230603 01:19:17.127"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:15.572" endtime="20230603 01:19:17.127"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.130" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:17.267" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:17.267" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:17.129" endtime="20230603 01:19:17.268"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:17.129" endtime="20230603 01:19:17.268"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.582" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:17.581" endtime="20230603 01:19:17.637"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:17.581" endtime="20230603 01:19:17.637"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:17.128" endtime="20230603 01:19:17.637"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-h629qq</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-h629qq</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.638" level="INFO">Clicking button 'class=css-h629qq'.</msg>
+<status status="PASS" starttime="20230603 01:19:17.638" endtime="20230603 01:19:17.716"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:17.638" endtime="20230603 01:19:17.716"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=css-foh633</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.716" level="INFO">Typing text 'testing' into text field 'class=css-foh633'.</msg>
+<status status="PASS" starttime="20230603 01:19:17.716" endtime="20230603 01:19:17.791"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[.//text() = 'Create']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.792" level="INFO">Clicking button '//button[.//text() = 'Create']'.</msg>
+<status status="PASS" starttime="20230603 01:19:17.792" endtime="20230603 01:19:17.853"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>//span[@class="Select-arrow-zone"]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class="Select-arrow-zone"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:17.854" level="INFO">Clicking element '//span[@class="Select-arrow-zone"]'.</msg>
+<msg timestamp="20230603 01:19:18.123" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:18.123" level="FAIL">Element with locator '//span[@class="Select-arrow-zone"]' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:17.853" endtime="20230603 01:19:18.124"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class="Select-arrow-zone"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.424" level="INFO">Clicking element '//span[@class="Select-arrow-zone"]'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.424" endtime="20230603 01:19:18.462"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:17.853" endtime="20230603 01:19:18.462"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>class=Select-menu-outer</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=Select-menu-outer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.463" level="INFO">Clicking element 'class=Select-menu-outer'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.463" endtime="20230603 01:19:18.506"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:18.463" endtime="20230603 01:19:18.506"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="react-root"]/div/main/div/div/div[1]/form/div[1]/div[1]/div/div[4]/div/div/div/div/span</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="react-root"]/div/main/div/div/div[1]/form/div[1]/div[1]/div/div[4]/div/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.507" level="INFO">Clicking element 'xpath=//*[@id="react-root"]/div/main/div/div/div[1]/form/div[1]/div[1]/div/div[4]/div/div/div/div/span'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.507" endtime="20230603 01:19:18.552"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:18.507" endtime="20230603 01:19:18.552"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>class=Select-menu-outer</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=Select-menu-outer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.553" level="INFO">Clicking element 'class=Select-menu-outer'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.552" endtime="20230603 01:19:18.597"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:18.552" endtime="20230603 01:19:18.597"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:18.598" level="INFO">Selecting frame 'id=keystone-html-0_ifr'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.598" endtime="20230603 01:19:18.622"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="tinymce"]/p</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.623" level="INFO">Typing text 'testing' into text field '//*[@id="tinymce"]/p'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.622" endtime="20230603 01:19:18.709"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230603 01:19:18.709" endtime="20230603 01:19:18.713"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-1_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:18.713" level="INFO">Selecting frame 'id=keystone-html-1_ifr'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.713" endtime="20230603 01:19:18.734"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="tinymce"]/p</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.734" level="INFO">Typing text 'testing' into text field '//*[@id="tinymce"]/p'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.734" endtime="20230603 01:19:18.827"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230603 01:19:18.828" endtime="20230603 01:19:18.830"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:18.831" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:18.831" endtime="20230603 01:19:18.947"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-ctpeu</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:18.948" endtime="20230603 01:19:18.980"/>
+</kw>
+<msg timestamp="20230603 01:19:18.980" level="INFO">${result} = Your changes have been saved successfully</msg>
+<status status="PASS" starttime="20230603 01:19:18.947" endtime="20230603 01:19:18.980"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${SUS_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230603 01:19:18.981" endtime="20230603 01:19:18.982"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:18.982" endtime="20230603 01:19:21.064"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:15.572" endtime="20230603 01:19:21.065"/>
+</test>
+<test id="s1-t3" name="test_EditPost" line="77">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:21.067" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:21.075" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:21.067" endtime="20230603 01:19:22.274"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:22.275" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:22.274" endtime="20230603 01:19:22.376"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:22.377" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:22.376" endtime="20230603 01:19:22.453"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:22.454" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:22.453" endtime="20230603 01:19:22.510"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:21.066" endtime="20230603 01:19:22.510"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:22.511" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:22.629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:22.629" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:22.511" endtime="20230603 01:19:22.629"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:22.511" endtime="20230603 01:19:22.630"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:22.942" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:22.942" endtime="20230603 01:19:23.006"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:22.940" endtime="20230603 01:19:23.006"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:22.510" endtime="20230603 01:19:23.006"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Link</arg>
+<arg>link=testing</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=testing</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:23.007" level="INFO">Clicking link 'link=testing'.</msg>
+<status status="PASS" starttime="20230603 01:19:23.007" endtime="20230603 01:19:23.098"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:23.007" endtime="20230603 01:19:23.098"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Select Frame</arg>
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:23.099" level="INFO">Selecting frame 'id=keystone-html-0_ifr'.</msg>
+<msg timestamp="20230603 01:19:23.383" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:23.383" level="FAIL">Element with locator 'id=keystone-html-0_ifr' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:23.099" endtime="20230603 01:19:23.384"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:23.685" level="INFO">Selecting frame 'id=keystone-html-0_ifr'.</msg>
+<status status="PASS" starttime="20230603 01:19:23.685" endtime="20230603 01:19:23.702"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:23.099" endtime="20230603 01:19:23.702"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="tinymce"]/p</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:23.703" level="INFO">Typing text 'testing' into text field '//*[@id="tinymce"]/p'.</msg>
+<status status="PASS" starttime="20230603 01:19:23.703" endtime="20230603 01:19:23.776"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230603 01:19:23.777" endtime="20230603 01:19:23.779"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:23.780" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:23.779" endtime="20230603 01:19:23.885"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-ctpeu</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:23.886" endtime="20230603 01:19:23.917"/>
+</kw>
+<msg timestamp="20230603 01:19:23.917" level="INFO">${result} = Your changes have been saved successfully</msg>
+<status status="PASS" starttime="20230603 01:19:23.886" endtime="20230603 01:19:23.917"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${SUS_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230603 01:19:23.917" endtime="20230603 01:19:23.918"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:23.919" endtime="20230603 01:19:26.015"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:21.066" endtime="20230603 01:19:26.015"/>
+</test>
+<test id="s1-t4" name="test_SearchPost" line="88">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:26.017" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:26.026" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:26.017" endtime="20230603 01:19:27.224"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.225" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:27.224" endtime="20230603 01:19:27.333"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.333" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:27.333" endtime="20230603 01:19:27.408"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.409" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:27.408" endtime="20230603 01:19:27.465"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:26.016" endtime="20230603 01:19:27.465"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.466" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:27.593" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:27.593" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:27.466" endtime="20230603 01:19:27.593"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:27.466" endtime="20230603 01:19:27.594"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.897" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:27.896" endtime="20230603 01:19:27.958"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:27.896" endtime="20230603 01:19:27.958"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:27.465" endtime="20230603 01:19:27.958"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Input Text</arg>
+<arg>class=css-foh633</arg>
+<arg>testing</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=css-foh633</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:27.959" level="INFO">Typing text 'testing' into text field 'class=css-foh633'.</msg>
+<status status="PASS" starttime="20230603 01:19:27.959" endtime="20230603 01:19:28.093"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:27.958" endtime="20230603 01:19:28.094"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>xpath=//table[@class='Table ItemList']/tbody/tr/td[2]/a</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>xpath=//table[@class='Table ItemList']/tbody/tr/td[2]/a</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:28.094" endtime="20230603 01:19:28.117"/>
+</kw>
+<msg timestamp="20230603 01:19:28.117" level="INFO">${result} = testing</msg>
+<status status="PASS" starttime="20230603 01:19:28.094" endtime="20230603 01:19:28.117"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${result}</arg>
+<arg>testing</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230603 01:19:28.117" endtime="20230603 01:19:28.118"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:28.118" endtime="20230603 01:19:30.187"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:26.016" endtime="20230603 01:19:30.188"/>
+</test>
+<test id="s1-t5" name="test_CreateComment" line="96">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:30.190" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:30.199" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:30.190" endtime="20230603 01:19:31.398"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:31.399" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:31.398" endtime="20230603 01:19:31.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:31.507" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:31.506" endtime="20230603 01:19:31.583"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:31.583" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:31.583" endtime="20230603 01:19:31.642"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:30.189" endtime="20230603 01:19:31.642"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:31.644" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:31.761" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:31.761" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:31.644" endtime="20230603 01:19:31.761"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:31.643" endtime="20230603 01:19:31.761"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.076" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.075" endtime="20230603 01:19:32.137"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.075" endtime="20230603 01:19:32.137"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:31.643" endtime="20230603 01:19:32.137"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Comment</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Comment">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Comments</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.139" level="INFO">Clicking link 'link=Comments'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.138" endtime="20230603 01:19:32.242"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.138" endtime="20230603 01:19:32.242"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.138" endtime="20230603 01:19:32.242"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-h629qq</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.243" level="INFO">Clicking button 'class=css-h629qq'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.243" endtime="20230603 01:19:32.321"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>//span[@class="Select-arrow-zone"]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class="Select-arrow-zone"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.323" level="INFO">Clicking element '//span[@class="Select-arrow-zone"]'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.322" endtime="20230603 01:19:32.377"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.322" endtime="20230603 01:19:32.377"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>class=Select-menu-outer</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=Select-menu-outer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.379" level="INFO">Clicking element 'class=Select-menu-outer'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.378" endtime="20230603 01:19:32.431"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.378" endtime="20230603 01:19:32.431"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>xpath=/html/body/div[2]/div/div/div/div/form/div[2]/div[2]/div/div/div/div/span</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div/div/div/form/div[2]/div[2]/div/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.432" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div/div/div/form/div[2]/div[2]/div/div/div/div/span'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.431" endtime="20230603 01:19:32.465"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.431" endtime="20230603 01:19:32.465"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Element</arg>
+<arg>class=Select-menu-outer</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=Select-menu-outer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.466" level="INFO">Clicking element 'class=Select-menu-outer'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.465" endtime="20230603 01:19:32.506"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.465" endtime="20230603 01:19:32.506"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div/div/div/form/div[3]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:32.507" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div/form/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20230603 01:19:32.506" endtime="20230603 01:19:32.555"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Select Frame</arg>
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:32.556" level="INFO">Selecting frame 'id=keystone-html-0_ifr'.</msg>
+<msg timestamp="20230603 01:19:32.721" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:32.722" level="FAIL">Element with locator 'id=keystone-html-0_ifr' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:32.556" endtime="20230603 01:19:32.722"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230603 01:19:33.024" level="INFO">Selecting frame 'id=keystone-html-0_ifr'.</msg>
+<status status="PASS" starttime="20230603 01:19:33.023" endtime="20230603 01:19:33.045"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:32.555" endtime="20230603 01:19:33.045"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="tinymce"]/p</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:33.046" level="INFO">Typing text 'testing' into text field '//*[@id="tinymce"]/p'.</msg>
+<status status="PASS" starttime="20230603 01:19:33.046" endtime="20230603 01:19:33.118"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230603 01:19:33.118" endtime="20230603 01:19:33.122"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:33.123" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:33.123" endtime="20230603 01:19:33.204"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-ctpeu</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:33.205" endtime="20230603 01:19:33.227"/>
+</kw>
+<msg timestamp="20230603 01:19:33.227" level="INFO">${result} = Your changes have been saved successfully</msg>
+<status status="PASS" starttime="20230603 01:19:33.205" endtime="20230603 01:19:33.227"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${SUS_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230603 01:19:33.228" endtime="20230603 01:19:33.228"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:33.228" endtime="20230603 01:19:35.310"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:30.189" endtime="20230603 01:19:35.311"/>
+</test>
+<test id="s1-t6" name="test_DeleteComment" line="114">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:35.313" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:35.322" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:35.313" endtime="20230603 01:19:36.575"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:36.576" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:36.576" endtime="20230603 01:19:36.682"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:36.683" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:36.682" endtime="20230603 01:19:36.758"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:36.758" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:36.758" endtime="20230603 01:19:36.817"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:35.313" endtime="20230603 01:19:36.817"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:36.818" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:36.940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:36.941" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:36.818" endtime="20230603 01:19:36.941"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:36.817" endtime="20230603 01:19:36.941"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:37.245" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:37.245" endtime="20230603 01:19:37.308"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:37.244" endtime="20230603 01:19:37.309"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:36.817" endtime="20230603 01:19:37.309"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Comment</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Comment">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Comments</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:37.310" level="INFO">Clicking link 'link=Comments'.</msg>
+<status status="PASS" starttime="20230603 01:19:37.310" endtime="20230603 01:19:37.408"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:37.310" endtime="20230603 01:19:37.408"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:37.309" endtime="20230603 01:19:37.408"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=ItemList__control--delete</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=ItemList__control--delete</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:37.409" level="INFO">Clicking button 'class=ItemList__control--delete'.</msg>
+<status status="PASS" starttime="20230603 01:19:37.409" endtime="20230603 01:19:37.485"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:37.409" endtime="20230603 01:19:37.486"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-t4884</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-t4884</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:37.486" level="INFO">Clicking button 'class=css-t4884'.</msg>
+<status status="PASS" starttime="20230603 01:19:37.486" endtime="20230603 01:19:37.543"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:37.486" endtime="20230603 01:19:37.544"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-pbviij</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:37.677" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:37.677" level="FAIL">Element with locator 'class=css-pbviij' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:37.545" endtime="20230603 01:19:37.678"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:37.991" endtime="20230603 01:19:38.006"/>
+</kw>
+<msg timestamp="20230603 01:19:38.006" level="INFO">${result} = No comments found...</msg>
+<status status="PASS" starttime="20230603 01:19:37.544" endtime="20230603 01:19:38.006"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${DEL_COM}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230603 01:19:38.006" endtime="20230603 01:19:38.007"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:35.312" endtime="20230603 01:19:38.007"/>
+</test>
+<test id="s1-t7" name="test_CreateCategory" line="123">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:38.008" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:38.018" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:38.008" endtime="20230603 01:19:39.203"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.205" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:39.203" endtime="20230603 01:19:39.307"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.308" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:39.308" endtime="20230603 01:19:39.384"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.385" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:39.384" endtime="20230603 01:19:39.437"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:38.007" endtime="20230603 01:19:39.437"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.438" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:39.553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:39.553" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:39.438" endtime="20230603 01:19:39.553"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:39.438" endtime="20230603 01:19:39.553"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.858" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:39.857" endtime="20230603 01:19:39.924"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:39.857" endtime="20230603 01:19:39.925"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:39.437" endtime="20230603 01:19:39.925"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Categories</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Categories</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:39.927" level="INFO">Clicking link 'link=Categories'.</msg>
+<status status="PASS" starttime="20230603 01:19:39.926" endtime="20230603 01:19:40.028"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:39.926" endtime="20230603 01:19:40.028"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:39.925" endtime="20230603 01:19:40.028"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-h629qq</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-h629qq</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:40.029" level="INFO">Clicking button 'class=css-h629qq'.</msg>
+<status status="PASS" starttime="20230603 01:19:40.029" endtime="20230603 01:19:40.102"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:40.028" endtime="20230603 01:19:40.102"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=css-foh633</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:40.103" level="INFO">Typing text 'testing' into text field 'class=css-foh633'.</msg>
+<status status="PASS" starttime="20230603 01:19:40.102" endtime="20230603 01:19:40.198"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[.//text() = 'Create']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:40.200" level="INFO">Clicking button '//button[.//text() = 'Create']'.</msg>
+<status status="PASS" starttime="20230603 01:19:40.199" endtime="20230603 01:19:40.271"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-2960tt</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:40.274" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<msg timestamp="20230603 01:19:40.448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:40.448" level="FAIL">Button with locator 'class=css-2960tt' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:40.273" endtime="20230603 01:19:40.448"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:40.761" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:40.761" endtime="20230603 01:19:40.829"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:40.272" endtime="20230603 01:19:40.829"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-ctpeu</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:40.830" endtime="20230603 01:19:40.855"/>
+</kw>
+<msg timestamp="20230603 01:19:40.855" level="INFO">${result} = Your changes have been saved successfully</msg>
+<status status="PASS" starttime="20230603 01:19:40.829" endtime="20230603 01:19:40.855"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${SUS_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230603 01:19:40.856" endtime="20230603 01:19:40.856"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:40.857" endtime="20230603 01:19:42.952"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:38.007" endtime="20230603 01:19:42.952"/>
+</test>
+<test id="s1-t8" name="test_DeleteCategory" line="135">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:42.954" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:42.963" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:42.953" endtime="20230603 01:19:44.168"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.171" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:44.169" endtime="20230603 01:19:44.276"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.276" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:44.276" endtime="20230603 01:19:44.350"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.350" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:44.350" endtime="20230603 01:19:44.405"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:42.953" endtime="20230603 01:19:44.405"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.407" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:44.536" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:44.536" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:44.406" endtime="20230603 01:19:44.536"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:44.406" endtime="20230603 01:19:44.537"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.850" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:44.850" endtime="20230603 01:19:44.910"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:44.849" endtime="20230603 01:19:44.911"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:44.406" endtime="20230603 01:19:44.911"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Categories</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Categories</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:44.913" level="INFO">Clicking link 'link=Categories'.</msg>
+<status status="PASS" starttime="20230603 01:19:44.912" endtime="20230603 01:19:45.015"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:44.911" endtime="20230603 01:19:45.016"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:44.911" endtime="20230603 01:19:45.016"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=ItemList__control--delete</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=ItemList__control--delete</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:45.018" level="INFO">Clicking button 'class=ItemList__control--delete'.</msg>
+<status status="PASS" starttime="20230603 01:19:45.018" endtime="20230603 01:19:45.099"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:45.017" endtime="20230603 01:19:45.099"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-t4884</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-t4884</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:45.101" level="INFO">Clicking button 'class=css-t4884'.</msg>
+<status status="PASS" starttime="20230603 01:19:45.100" endtime="20230603 01:19:45.170"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:45.100" endtime="20230603 01:19:45.170"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-pbviij</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:45.308" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:45.308" level="FAIL">Element with locator 'class=css-pbviij' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:45.171" endtime="20230603 01:19:45.309"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:45.615" endtime="20230603 01:19:45.635"/>
+</kw>
+<msg timestamp="20230603 01:19:45.635" level="INFO">${result} = No categories found...</msg>
+<status status="PASS" starttime="20230603 01:19:45.170" endtime="20230603 01:19:45.635"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${DEL_CAT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230603 01:19:45.635" endtime="20230603 01:19:45.635"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:42.953" endtime="20230603 01:19:45.636"/>
+</test>
+<test id="s1-t9" name="test_DeletePost" line="143">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:3000/keystone/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230603 01:19:45.637" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:3000/keystone/signin'.</msg>
+<msg timestamp="20230603 01:19:45.648" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230603 01:19:45.637" endtime="20230603 01:19:46.857"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>tbj@keystonejs.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:46.858" level="INFO">Typing text 'tbj@keystonejs.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230603 01:19:46.857" endtime="20230603 01:19:46.981"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>@123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:46.982" level="INFO">Typing text '@123456789' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230603 01:19:46.981" endtime="20230603 01:19:47.076"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-2960tt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.076" level="INFO">Clicking button 'class=css-2960tt'.</msg>
+<status status="PASS" starttime="20230603 01:19:47.076" endtime="20230603 01:19:47.139"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:45.636" endtime="20230603 01:19:47.140"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.142" level="INFO">Clicking link 'link=Posts'.</msg>
+<msg timestamp="20230603 01:19:47.288" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:47.288" level="FAIL">Link with locator 'link=Posts' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:47.141" endtime="20230603 01:19:47.288"/>
+</kw>
+<status status="FAIL" starttime="20230603 01:19:47.141" endtime="20230603 01:19:47.288"/>
+</kw>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.602" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:47.601" endtime="20230603 01:19:47.669"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.601" endtime="20230603 01:19:47.669"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.140" endtime="20230603 01:19:47.669"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Post">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.671" level="INFO">Clicking link 'link=Posts'.</msg>
+<status status="PASS" starttime="20230603 01:19:47.671" endtime="20230603 01:19:47.748"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.670" endtime="20230603 01:19:47.748"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.670" endtime="20230603 01:19:47.748"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=ItemList__control--delete</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=ItemList__control--delete</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.749" level="INFO">Clicking button 'class=ItemList__control--delete'.</msg>
+<status status="PASS" starttime="20230603 01:19:47.748" endtime="20230603 01:19:47.818"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.748" endtime="20230603 01:19:47.819"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Button</arg>
+<arg>class=css-t4884</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=css-t4884</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:47.819" level="INFO">Clicking button 'class=css-t4884'.</msg>
+<status status="PASS" starttime="20230603 01:19:47.819" endtime="20230603 01:19:47.880"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:47.819" endtime="20230603 01:19:47.880"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-pbviij</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230603 01:19:48.018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230603 01:19:48.019" level="FAIL">Element with locator 'class=css-pbviij' not found.</msg>
+<status status="FAIL" starttime="20230603 01:19:47.881" endtime="20230603 01:19:48.019"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>class=css-pbviij</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230603 01:19:48.328" endtime="20230603 01:19:48.349"/>
+</kw>
+<msg timestamp="20230603 01:19:48.349" level="INFO">${result} = No posts found...</msg>
+<status status="PASS" starttime="20230603 01:19:47.881" endtime="20230603 01:19:48.349"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${DEL_POST}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230603 01:19:48.349" endtime="20230603 01:19:48.350"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230603 01:19:48.350" endtime="20230603 01:19:50.417"/>
+</kw>
+<status status="PASS" starttime="20230603 01:19:45.636" endtime="20230603 01:19:50.418"/>
+</test>
+<doc>Lab05 RobotFrameWork test</doc>
+<status status="PASS" starttime="20230603 01:19:10.277" endtime="20230603 01:19:50.419"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Lab05Test">Lab05Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

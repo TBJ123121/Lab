@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230531 11:36:59.336" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\hles6\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser To Login Page">
+<msg timestamp="20230531 11:37:00.067" level="FAIL">No keyword with name 'Open Browser To Login Page' found.</msg>
+<status status="FAIL" starttime="20230531 11:37:00.066" endtime="20230531 11:37:00.067"/>
+</kw>
+<kw name="Input Username">
+<arg>demo</arg>
+<status status="NOT RUN" starttime="20230531 11:37:00.072" endtime="20230531 11:37:00.072"/>
+</kw>
+<kw name="Input Password">
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20230531 11:37:00.075" endtime="20230531 11:37:00.075"/>
+</kw>
+<kw name="Submit Credentials">
+<status status="NOT RUN" starttime="20230531 11:37:00.078" endtime="20230531 11:37:00.078"/>
+</kw>
+<kw name="Welcome Page Should Be Open">
+<status status="NOT RUN" starttime="20230531 11:37:00.080" endtime="20230531 11:37:00.080"/>
+</kw>
+<status status="PASS" starttime="20230531 11:36:59.371" endtime="20230531 11:37:03.078"/>
+</kw>
+<status status="PASS" starttime="20230531 11:36:59.370" endtime="20230531 11:37:03.078"/>
+</test>
+<status status="PASS" starttime="20230531 11:36:59.338" endtime="20230531 11:37:03.079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

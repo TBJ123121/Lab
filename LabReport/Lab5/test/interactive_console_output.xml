@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230602 21:47:30.691" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\hles6\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Login">
+<msg timestamp="20230602 21:47:31.059" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
+<status status="FAIL" starttime="20230602 21:47:31.059" endtime="20230602 21:47:31.059"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Post</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20230602 21:47:31.059" endtime="20230602 21:47:31.059"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Click Link</arg>
+<arg>link=test</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20230602 21:47:31.060" endtime="20230602 21:47:31.060"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3x</arg>
+<arg>300ms</arg>
+<arg>Select Frame</arg>
+<arg>id=keystone-html-0_ifr</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20230602 21:47:31.060" endtime="20230602 21:47:31.060"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="tinymce"]/p</arg>
+<arg>test</arg>
+<status status="NOT RUN" starttime="20230602 21:47:31.062" endtime="20230602 21:47:31.062"/>
+</kw>
+<kw name="Unselect Frame">
+<status status="NOT RUN" starttime="20230602 21:47:31.065" endtime="20230602 21:47:31.065"/>
+</kw>
+<kw name="Click Button">
+<arg>class=css-2960tt</arg>
+<status status="NOT RUN" starttime="20230602 21:47:31.066" endtime="20230602 21:47:31.066"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${result}</var>
+<arg>3x</arg>
+<arg>200ms</arg>
+<arg>Get Text</arg>
+<arg>class=css-ctpeu</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20230602 21:47:31.066" endtime="20230602 21:47:31.066"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${success}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20230602 21:47:31.066" endtime="20230602 21:47:31.066"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20230602 21:47:31.068" endtime="20230602 21:47:31.068"/>
+</kw>
+<status status="PASS" starttime="20230602 21:47:30.710" endtime="20230602 21:47:32.818"/>
+</kw>
+<status status="PASS" starttime="20230602 21:47:30.710" endtime="20230602 21:47:32.819"/>
+</test>
+<status status="PASS" starttime="20230602 21:47:30.692" endtime="20230602 21:47:32.820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
